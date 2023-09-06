@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Cup of Joey</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+
+
+    <script src="script.js"></script>
+    <style>
+        @media screen and(max-width: 1200px) {
+            body {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header id="header">
+
+
+        <nav id="nav-bar" class="topnav">
+
+            <a href="#about" class="nav-link">About Us</a>
+
+            <a href="#socdiv" class="nav-link">Contact Us</a>
+
+            <a href="#rtside" class="nav-link">Order Online</a>
+
+
+        </nav>
+
+
+        <h1>A Cup of Joey</h1>
+
+        <img id="header-img" src="https://www.acupofjoey.com" alt="Joeys Logo " hidden="true">
+
+        <div class="flex-container">
+
+
+            <div><img id="coffee1" src="./Images/coffee.jpg"></div>
+
+            <div><img id="coffee1" src="./Images/coffee.jpg"></div>
+
+            <div><img id="coffee1" src="./Images/coffee.jpg"></div>
+
+            <div><img id="coffee1" src="./Images/coffee.jpg"></div>
+
+            <div><img id="coffee1" src="./Images/coffee.jpg"></div>
+
+            <div><img id="coffee1" src="./Images/coffee.jpg"></div>
+
+            <div><img id="coffee1" src="./Images/coffee.jpg"></div>
+
+            <div><img id="coffee1" src="./Images/coffee.jpg"></div>
+
+            <div><img id="coffee1" src="./Images/coffee.jpg"></div>
+
+        </div>
+
+    </header>
+
+    <div id="midcontent">
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+
+                </div>
+                <div class="flip-box-back">
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="videodiv">
+
+
+        <video autoplay id="video" width="400" controls muted class="flip-box-front1">
+
+            <source src="./coffeevid.mp4" type="video/mp4">
+
+        </video>
+
+
+
+
+    </div>
+    </div>
+
+
+
+
+    <div id="formdiv">
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+
+            <div class="formcontainer">
+
+                <h2>Subscribe to our Newsletter</h2>
+
+                <p id="formpara">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur sunt, eos eaque minus harum sequi blanditiis ab praesentium voluptas quia, aliquid dolorem
+                    eius cum asperiores,
+                    illo debitis explicabo eveniet corrupti.</p>
+
+
+                <label for="email">Email
+
+                    <input id="email" type="email" placeholder="Enter Email" name="email" required>
+
+                </label>
+
+                <br>00
+
+                
+
+                <label for="name">Name
+
+                    <input id="name" placeholder="First and Last" type="text" required>
+
+                </label>
+
+                <br>
+
+
+                <label for="sub">I agree to Terms and Conditions
+                    <input id="sub" type="checkbox" required>
+                </label>
+
+                <br>
+
+
+                <input type="submit" id="submit" onclick="myFun()" value="Subscribe">
+
+
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <aside id="rtside">
+
+        <div class="container">
+
+            <h4 style="color:#70000e;">Order Online</h4>
+
+            <form id="form2" action="checkout.html" target="_blank">
+                 <p class="check">Small Cup of Joey<span class="price">$2</span><button class="addto"
+                        onclick="addTo()"><a href="#container">Add to &#128722;</a></button></p>
+
+                    <p class="check">Medium Cup of Joey <span class="price">$3</span><button class="addto"
+                            onclick="addTo2()"><a href="#container">Add to &#128722;</a></button></p>
+
+                    <p class="check">Large Cup of Joey<span class="price">$4</span><button class="addto"
+                            onclick="addTo3()"><a href="#container">Add to &#128722;</a></button></p>
+
+                    <p class="check">Giant Cup of Joey <span class="price">$5</span><button class="addto"
+                            onclick="addTo4()"><a href="#container">Add to &#128722;</a></button></p>
+
+                    <p class="check">Iced Cup of Joey <span class="price">$6</span><button class="addto"><a
+                                href="#container">Add to &#128722;</a></button></p>
+
+                    <p class="check">Cold Brewed Cup of Joey <span class="price">$4</span><button class="addto"><a
+                                href="#container">Add to &#128722;</a></button>
+                    </p>
+
+                    <p class="check">Joey's Sweet Iced Tea<span class="price">$3</span><button class="addto"><a
+                                href="#container">Add to &#128722;</a></button></p>
+
+                    <p class="check">Assorted Pastries 12ct. <span class="price">$11</span><button class="addto"><a
+                                href="#container">Add to &#128722;</a></button>
+                    </p>
+
+
+                    <div class="cart" id="shopcart1">
+                        <p style="color:#70000e; font-weight:bolder;">Small Cup of Joey <span id="shopping"></span></p>
+                        <p style="color:#70000e; font-weight:bolder;">Medium Cup of Joey <span id="shopping2"> </span>
+                        </p>
+                        <p style="color:#70000e; font-weight:bolder;">Large Cup of Joey <span id="shopping3"> </span>
+                        </p>
+                        <p style="color:#70000e; font-weight:bolder;">Giant Cup of Joey <span id="shopping4"> </span>
+                        </p>
+
+                        <!-- <p id="shopcart" style="color:#70000e; font-size:16px; font-weight: bolder;">Shopping Cart</p>
+                    
+                    <p id="incart" style="font-size:13px; color:darkblue; font-weight: bold; margin-top: 5px;">
+                        1 Cold Brewed Joey Cup of Joey<br>
+                        2 Large Cups of Joey <br>
+                        1 Assorted Pasteries <br>
+                        1 Iced Cup of Joey<br>
+                       
+                           </p> 
+                           
+                    <p id="total" style="color:darkgreen; padding-bottom:30px;">Total:<b>$31</b><sup style="text-decoration:none;">+applicable taxes</sup> -->
+
+                        </p>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+
+
+                    <input id="checkbtn" type="submit" value="Continue to Checkout" class="btns">
+         </form>         
+
+
+
+        </div>
+
+
+
+       
+
+
+    </aside>
+
+
+
+    <div id="lowcontent">
+
+
+
+        <div class="chat-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <p id="parachat" style="color:#70000e; font-size:20px; text-align:center; font-weight:bolder;">Chat with
+                    Joey</p>
+
+
+
+                <textarea id="joeychat" placeholder="Press Start Chat" name="msg"></textarea>
+
+
+                <button type="button" class="btns start" onclick="typeWriter()">Start Chat</button>
+            </form>
+        </div>
+
+
+        <div class="sidepara">
+
+            <h3 id="about" style="font-size:22px; padding-top:10px;">About Us</h3>
+
+            <p style="text-align:center;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eos ipsum ex voluptas eligendi qui nobis tenetur perferendis
+                laborum assumenda laboriosam magni sit a sint, eius dignissimos libero?<span id="dots">...</span><span
+                    id="more">Voluptas, unde magnam! Quaerat, iusto!
+                    Labore temporibus, illum atque suscipit tenetur vel alias repudiandae, reprehenderit laudantium
+                    blanditiis excepturi.
+                    Voluptate voluptatum doloremque dolore cum optio minus ab numquam veniam consequatur, a, quod
+                    expedita.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nam neque pariatur veritatis dolorem
+                    non similique illo officia necessitatibus laborum. Ex ducimus in libero, autem eum nesciunt. Illum,
+                    possimus, consequuntur ab obcaecati totam vel, cupiditate repellendus consequatur ex quibusdam saepe
+                    non sint ullam nobis ipsum a eaque excepturi. Ut, perferendis veritatis ducimus omnis eos atque quo
+                    cupiditate itaque officiis at.</span>
+            </p>
+
+            <button type="submit" onclick="myFunction()" id="myBtn1" class="rdmore">Read more</button>
+
+
+
+        </div>
+
+
+        <div class="coupon">
+
+            <div class="couponcontainer">
+
+                <h3 style="color:#70000e;"> &#9749; A Cup of Joey &#9749;</h3>
+
+
+
+                <h2><b>20% OFF YOUR ONLINE PURCHASE</b></h2>
+
+                <p style="color:white;"><b>Order online and receive 20% off your order.</b></p>
+
+            </div>
+
+            <p style="color:white;"><b>Use Promo Code:</b> <span class="promo">JOEY</span></p>
+
+            <br>
+
+            <br>
+
+            <br>
+
+
+            <p class="expire"><b>Expires: Nov 24, 2023</b></p>
+
+        </div>
+
+    </div>
+
+    <div id="footdiv">
+
+        <address id="addy">
+            A Cup of Joey
+            <br>
+            1234 Joey Joe
+            <br>
+            Anywhere USA 12345
+            <br>
+
+            (555) 555-5555
+
+        </address>
+
+        <div id="socdiv">
+            <p style="text-align:center;">Follow Us</p>
+
+            <a id="face" class="footsoc" href="#"><img src="./Images/facebook1.png"></a>
+
+            <a id="twit" class="footsoc" href="#"><img src="./Images/twitter1.png"></a>
+
+            <a id="insta" class="footsoc" href="#"><img src="./Images/instagram1.png"></a>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="pcc-userstory-tests.js"></script>
+</body>
+
+</html>
